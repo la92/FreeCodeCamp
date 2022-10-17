@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+</head>
+
+<body>
+<h1 id="title">Soccer Registration</h1>
+<p id="description">Please fill out the required information</p>
+
+<form id="survey-form">
+    <fieldset>
+        <label for="name" id="name-label">Name <input id="name" type="text" placeholder=" Enter Your Name" required></label>
+        <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter Your Email" required></label>
+        <label for="number" id="number-label">Age (optional)<input id="number" type="number" min="13" max="18" placeholder="Enter Your Age"></label>
+
+        <select id="dropdown">
+            <option value="select-current-position">Select current position</option>
+            <option value="forward">Forward</option>
+            <option value="cm">Center Mid-Fielder</option>
+            <option value="lm">Left Midfielder</option>
+            <option value="rm">Right Mid-Fielder</option>
+            <option value="cb">Center-Back</option>
+            <option value="lb">Left-Back</option>
+            <option value="rb">Right-Back</option>
+            <option value="gk">Goalie</option>
+
+
+        </select>
+    </fieldset>
+    <fieldset>
+        <h4>Would you recommend our soccer camp to a friend?</h3>
+            <label><input id="definitely" name="radio-button" type="radio" value="definitely" class="inline" checked/>Definitely</label>
+            <label><input id="not-sure" name="radio-button" type="radio" value="not-sure" class="inline"/>Not Sure</label>
+            <label><input id="maybe" name="radio-button" type="radio" value="maybe" class="inline"/>Maybe</label>
+    </fieldset>
+
+    <fieldset>
+        <h4>What would you like to see in our program</h4>
+        <h6>(check all that apply)</h6>
+        <label for="coaching" value="coaching"><input type="checkbox" name="coaching" value="coaching" class="inline"/>Coaching</label>
+        <label for="equipment" value="equipment"><input type="checkbox" name="equipment" value="equipment" class="inline"/>Equipment</label>
+        <label for="uniforms" value="unifroms"><input type="checkbox" name="uniforms" value="uniforms" class="inline">Uniforms</label>
+        <label for="drills" value="drills"><input type="checkbox" name="drills" value="drills" class="inline">Drills</label>
+
+    </fieldset>
+
+    <fieldset>
+        <h4>Please leave any sugesstions!</h4>
+        <textarea id="suggestions" rows="10" cols="70" placeholder="Additional Suggestions!"></textarea>
+
+    </fieldset>
+    <input id="submit" type="submit" value="Submit"/>
+</form>
+</body>
+
+</html>
